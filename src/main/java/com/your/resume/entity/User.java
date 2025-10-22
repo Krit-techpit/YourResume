@@ -35,32 +35,26 @@ public class User {
     }
 
     public Object getEmail() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getEmail'");
     }
 
     public void setEmail(Object email2) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'setEmail'");
     }
 
     public Object getPhoneNumber() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getPhoneNumber'");
     }
 
     public void setPhoneNumber(Object phoneNumber2) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'setPhoneNumber'");
     }
 
     public Object getPassword() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getPassword'");
     }
 
     public void setPassword(Object password2) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'setPassword'");
     }
 }
