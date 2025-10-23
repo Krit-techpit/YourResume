@@ -4,11 +4,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import jakarta.persistence.*;
 
-
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
-@Table(name = "User")
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,35 +33,4 @@ public class User {
     @Column(name="password")
     String password;
 
-    public Object getName() {
-        throw new UnsupportedOperationException("Unimplemented method 'getName'");
     }
-
-    public void setName(Object name2) {
-        throw new UnsupportedOperationException("Unimplemented method 'setName'");
-    }
-
-    public Object getEmail() {
-        throw new UnsupportedOperationException("Unimplemented method 'getEmail'");
-    }
-
-    public void setEmail(Object email2) {
-        throw new UnsupportedOperationException("Unimplemented method 'setEmail'");
-    }
-
-    public Object getPhoneNumber() {
-        throw new UnsupportedOperationException("Unimplemented method 'getPhoneNumber'");
-    }
-
-    public void setPhoneNumber(Object phoneNumber2) {
-        throw new UnsupportedOperationException("Unimplemented method 'setPhoneNumber'");
-    }
-
-    public Object getPassword() {
-        throw new UnsupportedOperationException("Unimplemented method 'getPassword'");
-    }
-
-    public void setPassword(Object password2) {
-        throw new UnsupportedOperationException("Unimplemented method 'setPassword'");
-    }
-}

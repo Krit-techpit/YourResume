@@ -1,5 +1,6 @@
 package com.your.resume.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,10 +13,12 @@ import com.your.resume.service.UserService;
 @RequestMapping("/users")
 @RestController
 public class UserController {
-    UserService userService;
+    @Autowired
+    private UserService userService;
 
     @PostMapping("/create")
-    public ResponseEntity<User> createUser(@RequestBody User user) {
-        return ResponseEntity.ok(userService.createUser(user));
+    public User createUser(@RequestBody User user) {
+        User user1 = userService.createUser(user);
+        return user1;
     }
 }
