@@ -10,13 +10,17 @@ import com.your.resume.repository.UserRepository;
 public class UserService {
     @Autowired
     private UserRepository userRepository;
+
+    private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     
     public User createUser(User user) {
         User user1 = new User();
         user1.setName(user.getName());
         user1.setEmail(user.getEmail());
         user1.setPhoneNumber(user.getPhoneNumber());
-        user1.setPassword(user.getPassword());
+        user1.setGender(user.getGender());
+        user1.setAbout(user.getAbout());
+        user1.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user1);
         return user1;
     }

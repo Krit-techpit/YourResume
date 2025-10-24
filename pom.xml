@@ -42,6 +42,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-crypto</artifactId>
+		</dependency>
+
 		
 		<!-- ⚙️ WebFlux uses Netty — upgrade Netty version to remove Unsafe warnings -->
 		<dependency>
@@ -95,6 +100,12 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency> -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.7.4</version> <!-- use latest -->
+		</dependency>
+
 
 		<!-- ✅ Add explicit Mockito version (resolves dynamic agent warning) -->
 		<dependency>
