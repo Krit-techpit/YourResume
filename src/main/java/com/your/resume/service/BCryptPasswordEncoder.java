@@ -1,10 +1,12 @@
 package com.your.resume.service;
 
+import org.springframework.security.crypto.bcrypt.BCrypt;
+
 public class BCryptPasswordEncoder {
 
     public String encode(String password) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'encode'");
+        String encodedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+        return encodedPassword;
     }
 
 }

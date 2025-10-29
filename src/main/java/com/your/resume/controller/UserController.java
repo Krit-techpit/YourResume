@@ -15,7 +15,7 @@ import jakarta.websocket.server.PathParam;
 
 @RequestMapping("/users")
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 public class UserController {
     @Autowired
     private UserService userService;
